@@ -1,41 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Keystone Cougar 30RLI - Yard Layout</title>
-    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-  </head>
-  <body style="margin: 0; overflow: hidden;">
-    <a-scene xr-mode-ui="enabled: true" renderer="alpha: true; colorManagement: true;">
-      
-      <a-sky color="#000" opacity="0"></a-sky>
+<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+<a-scene xr-mode-ui="enabled: true" renderer="alpha: true;">
+  <a-sky opacity="0"></a-sky>
+  
+  <a-box 
+    position="0 0 -15" 
+    width="2.4" 
+    height="3.5" 
+    depth="11" 
+    material="wireframe: true; color: #00ff00; weight: 5">
+  </a-box>
 
-      <a-entity position="0 0 -8">
-        
-        <a-box 
-          position="0 1.75 0" 
-          width="2.44" 
-          height="3.45" 
-          depth="10.97" 
-          color="#fdfdfd" 
-          opacity="0.7">
-          
-          <a-box position="0 0 5.48" width="2.44" height="3.45" depth="0.1" color="red"></a-box>
-          
-          <a-box 
-            position="-1.2 0 -1" 
-            width="1" 
-            height="2" 
-            depth="4" 
-            color="#a0a0a0" 
-            opacity="0.8">
-          </a-box>
-        </a-box>
-
-        <a-plane rotation="-90 0 0" width="2.44" height="10.97" color="#333" opacity="0.4"></a-plane>
-      </a-entity>
-
-      <a-entity camera look-controls wasd-controls position="0 1.6 0"></a-entity>
-      
-    </a-scene>
-  </body>
-</html>
+  <a-entity camera position="0 1.6 0"></a-entity>
+</a-scene>
